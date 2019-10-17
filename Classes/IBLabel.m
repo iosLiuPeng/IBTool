@@ -29,7 +29,7 @@
 {
     _locText = locText;
     
-    if (_fromNib) {
+    if (_fromNib && locText.length) {
         self.text = locString(locText);
     }
 }

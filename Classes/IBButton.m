@@ -57,7 +57,7 @@
 {
     _locText = locText;
     
-    if (_fromNib) {
+    if (_fromNib && locText.length) {
         // 经过试验，这里只能使用-setTitle:forState:方法，不能使用"self.titleLabel.text = "，后者不起作用
         [self setTitle:locString(locText) forState:UIControlStateNormal];
     }
