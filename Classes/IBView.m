@@ -31,6 +31,35 @@
     self.layer.borderColor = borderColor.CGColor;
 }
 
+/// 阴影颜色
+- (void)setShadowColor:(UIColor *)shadowColor
+{
+    _shadowColor = shadowColor;
+    self.layer.shadowColor = shadowColor.CGColor;
+}
+
+/// 阴影偏移量
+- (void)setShadowOffset:(CGSize)shadowOffset
+{
+    _shadowOffset = shadowOffset;
+    self.layer.shadowOffset = shadowOffset;
+}
+
+/// 阴影半径
+- (void)setShadowRadius:(CGFloat)shadowRadius
+{
+    _shadowRadius = shadowRadius;
+    self.layer.shadowRadius = shadowRadius;
+}
+
+/// 阴影透明度
+- (void)setShadowOpacity:(CGFloat)shadowOpacity
+{
+    _shadowOpacity = shadowOpacity;
+    self.layer.shadowOpacity = shadowOpacity;
+}
+
+
 #pragma mark - Overwrite
 - (void)layoutSubviews
 {

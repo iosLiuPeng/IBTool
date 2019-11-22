@@ -22,6 +22,12 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;    ///< 边框宽度
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;   ///< 边框颜色
 
+/* 阴影 */
+@property (nonatomic, strong) IBInspectable UIColor *shadowColor;   ///< 阴影颜色
+@property (nonatomic, assign) IBInspectable CGSize shadowOffset;    ///< 阴影偏移量
+@property (nonatomic, assign) IBInspectable CGFloat shadowRadius;   ///< 阴影半径
+@property (nonatomic, assign) IBInspectable CGFloat shadowOpacity;  ///< 阴影透明度
+
 @end
 
 NS_ASSUME_NONNULL_END
